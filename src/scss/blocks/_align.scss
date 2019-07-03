@@ -2,6 +2,6 @@
 	max-width: none;
 }
 
-.alignwide {
+.alignwide:not(.wp-block-group) {
 	@extend .container-wide;
 }

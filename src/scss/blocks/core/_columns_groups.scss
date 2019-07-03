@@ -1,0 +1,21 @@
+/*.wp-block-columns {
+	@extend .row;
+
+	.wp-block-column {
+		@extend .col;
+	}
+}*/
+
+.wp-block-group {
+	&:not(.alignfull) {
+		.wp-block-group__inner-container {
+			@extend .container;
+		}
+
+		&.alignwide {
+			.wp-block-group__inner-container {
+				@extend .container-wide;
+			}
+		}
+	}
+}
